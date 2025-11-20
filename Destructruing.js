@@ -1,0 +1,48 @@
+// updateing my portfolio normal css into tailwind css 
+
+// npms
+
+gsap
+routering
+framermotion
+smothscrmlling
+
+
+components
+Header
+Footer
+Loadeer-component
+Chilliman
+scrolling-cards
+moreproofs
+
+
+
+pages
+Home
+sections
+// Landing-page ke andr happy client ke nechy button reuse hoga
+
+Aboutus
+sections
+// bra sa about me likha aye jese hi scrll ho to text choota ho aur then mere bare me aragh aye
+
+// imptactfuldesign
+
+stack
+section
+// meri sari skills
+
+Services
+section
+ourservices
+faqs
+
+project
+// work colleciotn paragh
+// then proejct cards shwocase
+// moreproofs-component
+// 1st Runner-Up in Web Design
+// git-hub static
+
+contact

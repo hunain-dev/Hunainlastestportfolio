@@ -4,7 +4,7 @@ import React, { useEffect, useRef } from "react";
 import LocomotiveScroll from "locomotive-scroll";
 import "locomotive-scroll/dist/locomotive-scroll.css"; // Import CSS
 
-const UseSmoothScrolling = ({ children }) => {
+const SmoothScrolling = ({ children }) => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -30,4 +30,4 @@ const UseSmoothScrolling = ({ children }) => {
   );
 };
 
-export default UseSmoothScrolling;
+export default SmoothScrolling;

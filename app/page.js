@@ -1,10 +1,15 @@
 import React from 'react'
+import LandingHero from './sections/home/LandingHero'
+import HappyClients from './sections/home/HappyClients'
 
 const page = () => {
   return (
     <div>
-    <div className='h-[200vh] w-full '></div>
-    <div className='h-[200vh] w-full bg-orange-500'></div>
+    <div className='h-full pt-31 w-full '>
+      <LandingHero/>
+      <HappyClients/>
+      
+    </div>
       
     </div>
   )

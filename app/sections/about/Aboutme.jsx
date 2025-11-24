@@ -46,19 +46,19 @@ const Aboutme = () => {
     paraRef.current,
     {
       opacity: 1,
-      y: -10,
+      y: -2,
       ease: "power2.out",
     },
-    0.2   // ye delay hai
+    0.1   // ye delay hai
   );
   }, []);
   return (
-    <div ref={sectionRef} className="min-h-full   text-white w-full">
+    <div ref={sectionRef} className="min-h-[70vh] overflow-hidden  text-white w-full">
       <div className="h-full w-full">
         <div className="relative flex items-center justify-center flex-col w-full ">
           <h2
             ref={textRef}
-            className="ppneuemontreal font-[600] flex items-center justify-center uppercase text-[24vw] leading-[4%]"
+            className="ppneuemontreal font-500 flex items-center justify-center uppercase text-[24vw] leading-[4%]"
           >
             Huna
             <span className="h-full   w-fit  ">
@@ -83,14 +83,12 @@ const Aboutme = () => {
           </h4>
           <div
   ref={paraRef}
-  className="h-full flex items-start  justify-start text-center px-80 absolute top-60 left-0 w-full opacity-0 translate-y-40"
+  className="h-full flex items-start  justify-start text-center px-30 absolute top-60 left-0 w-full opacity-0 translate-y-40"
 >
 
-          <h4 className="actay">
-The companies we work with push the boundaries in Science + Technology. In us,
-they find a partner who pushes the boundaries in creativity, growth strategy +
-world-class creative production. Together, we transform how complex brands
-express themselves in the intelligence age.</h4>
+          <h4 className="actay text-lg">
+         Hi! I'm Muhammad Hunain, a Web Designer and Web Developer from Karachi, Pakistan. I specialize in creating interactive, visually appealing websites using ReactJS, GSAP, Framer Motion, and other modern technologies.With a focus on front-end development, I design sleek, user-friendly websites that are not only functional but also deliver seamless digital experiences. I love adding animations and smooth transitions to my projects, making them stand out. I’ve worked on a variety of projects, including those featured on Awwwards, and I'm always looking for new opportunities to collaborate and innovate in the world of web development. Feel free to explore my work and connect if you'd like to collaborate!
+          </h4>
         </div>
 
         </div>

@@ -103,6 +103,56 @@ scroll-behavior: smooth;
 
 
 }
+
+
+@font-face {
+  font-family: 'Morganite';
+  src: url('/Assets/Fonts/Morganite-Black.ttf');
+  font-display: swap;
+ 
+}
+.Morganite{
+  font-family: 'Morganite';
+  src: url('/public/Assets/Fonts/Morganite-Black.ttf');
+  font-display: swap;
+
+
+}
+
+
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/Assets/Fonts/Satoshi.ttf');
+  font-display: swap;
+ 
+}
+
+.Satoshi{
+  font-family: 'Satoshi';
+  src: url('/public/Assets/Fonts/Satoshi.ttf');
+  font-display: swap;
+
+
+}
+
+@font-face {
+  font-family: 'Impacted';
+  src: url('/Assets/Fonts/Impacted.ttf');
+  font-display: swap;
+ 
+}
+
+
+.Impacted{
+  font-family: 'Impacted';
+  src: url('/public/Assets/Fonts/Satoshi.ttf');
+  font-display: swap;
+
+
+}
+
+
 @font-face {
   font-family: 'MarvinVisions';
   src: url('/public/Assets/Fonts/MarvinVisions-Bold.otf');
@@ -147,19 +197,9 @@ scroll-behavior: smooth;
   font-display: swap;
  
 }
-@font-face {
-  font-family: 'Morganite';
-  src: url('/public/Assets/Fonts/Morganite-Black.ttf');
-  font-display: swap;
- 
-}
 
-@font-face {
-  font-family: 'Impacted';
-  src: url('/public/Assets/Fonts/Impacted.ttf');
-  font-display: swap;
- 
-}
+
+
 @font-face {
   font-family: 'rejouice';
   src: url('/public/Assets/Fonts/rejoucie.ttf'); 
@@ -193,12 +233,6 @@ scroll-behavior: smooth;
 
 }
 
-@font-face {
-  font-family: 'Satoshi';
-  src: url('/public/Assets/Fonts/Satoshi.ttf');
-  font-display: swap;
- 
-}
 
 @font-face {
   font-family: 'Satoshi-black';
@@ -239,3 +273,17 @@ scroll-behavior: smooth;
 
 }
 
+
+
+
+@keyframes moveImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2%); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+}

@@ -90,11 +90,19 @@ scroll-behavior: smooth;
 
 @font-face {
   font-family: 'ppneuemontreal';
-  src: url('/public/Assets/Fonts/ppneuemontreal-bold.otf');
+  src: url('/Assets/Fonts/ppneuemontreal-bold.otf');
   font-display: swap;
  
 }
 
+
+.ppneuemontreal{
+  font-family: 'ppneuemontreal';
+  src: url('/public/Fonts/ppneuemontreal-bold.otf');
+  font-display: swap;
+
+
+}
 @font-face {
   font-family: 'MarvinVisions';
   src: url('/public/Assets/Fonts/MarvinVisions-Bold.otf');

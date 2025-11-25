@@ -1,5 +1,7 @@
 import React from 'react'
 import ProjectsShowcase from "../projects/ProjectsShowcase"
+import MoreProofsSection from './MoreProofsSection'
+import Awards from './Awards'
 const Projects = () => {
   return (
     <div className='h-full  w-full mt-10'>
@@ -13,6 +15,8 @@ const Projects = () => {
     </div>
 
     <ProjectsShowcase/>
+    <MoreProofsSection/>
+    <Awards/>
     </div>
   )
 }

@@ -8,7 +8,7 @@ import Projects from './sections/projects/Projects'
 const page = () => {
   return (
     <div>
-    <div className='h-full pt-31 w-full '>
+    <div className=' pt-31 w-full '>
       <Home/>
       <Aboutus/>
       <TechStack/>

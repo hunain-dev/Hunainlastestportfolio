@@ -1,5 +1,7 @@
 @import "tailwindcss";
-
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 *{
   box-sizing: border-box;
@@ -297,4 +299,58 @@ scroll-behavior: smooth;
   100% {
     transform: translateY(0); 
   }
+}
+
+
+
+
+
+.swiper {
+  width: 20vw;
+  height: 31vw;
+}
+
+.swiper-slide {
+  border-radius: 2vw;
+
+}
+
+.swiper-slide:nth-child(1n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(2n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(3n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(4n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(5n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(6n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(7n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(8n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(9n) {
+  background-color: black;
+}
+
+.swiper-slide:nth-child(10n) {
+  background-color: black;
 }

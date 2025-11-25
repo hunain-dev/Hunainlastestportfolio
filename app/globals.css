@@ -154,6 +154,23 @@ scroll-behavior: smooth;
 
 
 @font-face {
+  font-family: 'Garelin';
+  src: url('/Assets/Fonts/GarelinaBold-rgZ0p.ttf');
+  font-display: swap;
+
+}
+
+.Garelin{
+  font-family: 'Garelin';
+  src: url('/public/Assets/Fonts/GarelinaBold-rgZ0p.ttf');
+  font-display: swap;
+
+
+}
+
+
+
+@font-face {
   font-family: 'MarvinVisions';
   src: url('/public/Assets/Fonts/MarvinVisions-Bold.otf');
   font-display: swap;
@@ -266,12 +283,6 @@ scroll-behavior: smooth;
  
 }
 
-@font-face {
-  font-family: 'Garelin';
-  src: url('/public/Assets/Fonts/GarelinaBold-rgZ0p.ttf');
-  font-display: swap;
-
-}
 
 
 

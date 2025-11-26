@@ -10,11 +10,11 @@ smothscrmlling
 
 components
 Header ✅
-Footer
-Loadeer-component
+Footer ✅
+Loader-component ✅
 Chilliman ✅
-scrolling-cards
-moreproofs
+scrolling-cards ✅
+moreproofs ✅
 
 
 
@@ -43,6 +43,6 @@ project
 // then proejct cards shwocase ✅
 // moreproofs-component ✅
 // 1st Runner-Up in Web Design ✅
-// git-hubstatic
+// git-hubstatic ✅
 
-contact
+contact ✅

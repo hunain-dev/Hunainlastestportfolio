@@ -5,7 +5,7 @@ import Awards from './Awards'
 import Githubstatic from './Githubstatic'
 const Projects = () => {
   return (
-    <div className='h-full  w-full mt-10'>
+    <div id="project" className='h-full  w-full mt-10'>
        <div className="px-30 mx-auto mb-[1vw]">
       <h2 className="Satoshi font-medium text-[3vw] mb-4 text-center  text-[#242627]">
         Work Collection

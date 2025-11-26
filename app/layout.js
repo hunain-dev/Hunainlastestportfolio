@@ -5,6 +5,7 @@ import SmoothScrolling from "./hooks/SmoothScrolling";
 import Cursor from "./components/Cursor";
 import Chilliman from "./components/ChilliMan";
 import Footer from "./components/Footer";
+import Loader from "./components/Loader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <SmoothScrolling>
+          <Loader/>
 
           <Cursor />
           <Chilliman />

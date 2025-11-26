@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Ourservices = () => {
   return (
-    <div className="w-full mt-[8vh] h-full relative bg-[#689D48]">
+    <div  id="services" className="w-full mt-[8vh] h-full relative bg-[#689D48]">
 
       {/* Top Section */}
       <div className="w-full px-[1vw] text-center">

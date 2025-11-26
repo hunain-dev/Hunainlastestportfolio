@@ -12,7 +12,7 @@ const Chilliman = () => {
   useEffect(() => {
     // Initial position - off screen to the right
     gsap.set(imgRef.current, {
-      x:1300,
+      x:1200,
       opacity: 0
     });
 
@@ -20,7 +20,7 @@ const Chilliman = () => {
     gsap.to(imgRef.current, {
       x: 0,
       opacity: 1,
-      delay: 4, // 3 second delay after page load
+      delay: 2, // 3 second delay after page load
       duration: 4,
       ease: "power2.out"
     });
@@ -31,12 +31,12 @@ const Chilliman = () => {
         trigger: "body",
         start: "top top",
 end: "bottom+=4000",
-        scrub:19,
+        scrub:25,
       }
     });
     
     tl.to(imgRef.current, {
-      x:-1300,
+      x:-1200,
       rotate: 0,
     })
 

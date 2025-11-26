@@ -17,7 +17,7 @@ const Myskillss = () => {
   const constraintsRef = useRef(null);
 
   return (
-    <div className="myskills mt-[20vh] w-full px-[3vw] text-center">
+    <div id="stack" className="myskills mt-[20vh] w-full px-[3vw] text-center">
       <h1 className="Satoshi font-medium text-[3vw] text-[#242627] mb-8">
         My Skills
       </h1>

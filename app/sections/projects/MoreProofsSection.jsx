@@ -61,7 +61,7 @@ const MoreProofsSection = () => {
   return (
     <div
       ref={containerRef}
-      className="h-screen w-full flex items-center justify-center bg-[#F55A00] relative overflow-hidden"
+      className="min-h-screen w-full flex items-center justify-center bg-[#F55A00] relative overflow-hidden"
     >
       {/* Need */}
 

@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectsShowcase from "../projects/ProjectsShowcase"
 import MoreProofsSection from './MoreProofsSection'
 import Awards from './Awards'
+import Githubstatic from './Githubstatic'
 const Projects = () => {
   return (
     <div className='h-full  w-full mt-10'>
@@ -17,6 +18,7 @@ const Projects = () => {
     <ProjectsShowcase/>
     <MoreProofsSection/>
     <Awards/>
+    <Githubstatic/>
     </div>
   )
 }

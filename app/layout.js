@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import SmoothScrolling from "./hooks/SmoothScrolling";
 import Cursor from "./components/Cursor";
 import Chilliman from "./components/ChilliMan";
+import Footer from "./components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,6 +31,8 @@ export default function RootLayout({ children }) {
           <Chilliman />
           <Header />
           {children}
+          <Footer />
+
         </SmoothScrolling>
       </body>
     </html>

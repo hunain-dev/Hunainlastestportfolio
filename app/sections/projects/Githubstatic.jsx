@@ -15,14 +15,16 @@ const Githubstatic = () => {
 
       {/* Full width BIG container */}
       <div
-        className="
-        px-25 py-10
-        w-[67vw]       
-        overflow-x-auto 
-        flex 
-        justify-center
-      "
-      >
+  className="
+    border border-gray-500
+   py-10
+
+ px-30 py-10 overflow-x-auto flex justify-center
+    shadow-lg
+    rounded-xl
+  "
+>
+
         <Image
           src="https://ghchart.rshah.org/hunain-dev"
           alt="GitHub Contributions"

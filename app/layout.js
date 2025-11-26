@@ -29,8 +29,8 @@ export default function RootLayout({ children }) {
 
           <Cursor />
           <Chilliman />
-          <Header />
-          {children}
+          <Header /> 
+         {children}
           <Footer />
 
         </SmoothScrolling>

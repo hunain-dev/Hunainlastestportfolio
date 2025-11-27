@@ -5,16 +5,9 @@ import Link from 'next/link';
 import Textanimation from './Ui/Textaniamtion';
 const Header = () => {
 
-
   const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = "/Assets/images/Muhammad Hunain Resume.pdf";
-    link.download = "Muhammad hunain.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open("/Assets/images/Muhammad Hunain Resume.pdf", "_blank");
   };
-
   return (
     <div className="
     fixed top-0 left-1/2 -translate-x-1/2 
@@ -80,7 +73,7 @@ const Header = () => {
   
     {/* RIGHT BUTTON */}
     <div className="flex items-center justify-end h-full">
-    <Button   btntext="Resume"  link="/work" classname="uppercase px-5 py-2 bg-[#FFD900]"  />
+    <Button   btntext="Resume" onclick={downloadResume}  classname="uppercase px-5 py-2 bg-[#FFD900]"  />
 
     </div>
   

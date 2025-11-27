@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Button = ({ btntext, classname, link }) => {
+const Button = ({ btntext, classname, link,onclick }) => {
   const isExternal = link?.startsWith("http");
 
   // agar link http ya https se start hota hai, to anchor tag use hoga
@@ -9,6 +9,7 @@ const Button = ({ btntext, classname, link }) => {
     return (
       <a
         href={link}
+        onClick={onclick}   // ✅ ADD
         target="_blank"
         rel="noopener noreferrer"
         className={`group relative overflow-hidden cursor-pointer SuisseIntl   border border-black text-black flex items-center justify-center gap-2 ${classname}`}
@@ -26,6 +27,7 @@ const Button = ({ btntext, classname, link }) => {
   return (
     <Link
       href={link || "#"}
+      onClick={onclick}   // ✅ ADD
       className={`group relative overflow-hidden cursor-pointer SuisseIntl  text-[1vw] border border-black text-black flex items-center justify-center gap-2 ${classname}`}
     >
       <h2 className="relative z-10 transition-all duration-300 group-hover:text-white">

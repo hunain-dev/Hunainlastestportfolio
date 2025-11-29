@@ -13,7 +13,6 @@ const SwiperSlider = () => {
     {
       status: "coming-soon",
       comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
-      cardbg: "#080808",
       cardvideo: "/assets/Videos/commingsoon.mp4",
       desctittle: "Mammoth Murals",
       carddesc:
@@ -21,7 +20,6 @@ const SwiperSlider = () => {
       link: "https://mammoth-murals.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/assets/images/Klearmindtherapy.png",
       desctittle: "Klearmind Clinics",
       carddesc:
@@ -29,7 +27,6 @@ const SwiperSlider = () => {
       link: "https://klearmind-therapy-clinics.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/Camille-Bas-1200x908.png",
       desctittle: "Digital Tobacco",
       carddesc:
@@ -37,7 +34,6 @@ const SwiperSlider = () => {
       link: "https://tabaccino.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/jobs.jpg",
       desctittle: "Career Hunt",
       carddesc:
@@ -46,7 +42,6 @@ const SwiperSlider = () => {
     },
 
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/ochidesign.png",
       desctittle: "Ochi Clone",
       carddesc:
@@ -55,7 +50,6 @@ const SwiperSlider = () => {
     },
 
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/Christmas image.png",
       desctittle: "Santa's Companion",
       carddesc:
@@ -63,35 +57,30 @@ const SwiperSlider = () => {
       link: "https://santas-store.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/tictac.png",
       desctittle: "Tic-Tac-Toe Game",
       carddesc: "Tic Tac Toe is a simple and interactive web game designed to capture the fun and competitive spirit of the classic two-player strategy",
       link: "https://reactxogame.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/spacer.png",
       desctittle: "spencergabor work",
       carddesc: "Memory Game is an engaging and interactive web-based project designed to challenge concentration and recall skills. With smooth animations,",
       link: "https://spancer-gabor.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/weather.jpg",
       desctittle: "Weather App",
       carddesc: "Weather App is a modern and user-friendly web application designed to provide real-time weather updates for any location.",
       link: "https://macro-weather-app.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/assets/images/Klearmindtherapy.png",
       desctittle: "Two Good Company",
       carddesc: "Two Good Company is a fully animated and responsive website clone inspired by the award-winning brand. With smooth animations, responsive layout,",
       link: "https://twogoodcompany.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/TwoGoodGoodSave.jpg",
       desctittle: "Furni – Interior Design",
       carddesc: "Furni is a modern and minimalistic interior design website built to showcase elegant layouts and stylish aesthetics. With smooth animations,",
@@ -99,7 +88,6 @@ const SwiperSlider = () => {
       link: "https://furni-interior-design.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/hello.jpg",
       desctittle: "We think elastic",
       carddesc: "We Think Elastic is a modern and interactive website clone inspired by an award-winning design. With smooth animations, responsive layout,",
@@ -107,7 +95,6 @@ const SwiperSlider = () => {
       link: "https://myrejoucie.netlify.app/",
     },
     {
-      cardbg: "#080808",
       cardimg: "/Assets/images/rejouices.jpeg",
       desctittle: "rejouices",
       carddesc: "Rejouice is a fully animated and responsive website clone inspired by the award-winning agency site. With smooth animations,",
@@ -127,7 +114,7 @@ const SwiperSlider = () => {
           cardcollection.map((elem,index)=>{
             return(
               <SwiperSlide key={index}>
-              <div className='h-[40vh] bg-blue-500 w-full rounded-xl overflow-hidden'>
+              <div className='h-[40vh] w-full rounded-xl overflow-hidden'>
   
                 {/* ✅ ONLY FIRST SLIDE WILL SHOW VIDEO */}
                 {index === 0 && elem.cardvideo ? (

@@ -12,7 +12,7 @@ const ProjectsShowcase = () => {
 <h2 className="Garelin font-normal uppercase text-[14vw] ">
 Projects
 </h2>
-          <div className="absolute flex items-center justify-center left-0 h-[60vh] w-full ">
+          <div className="absolute flex items-center justify-center left-0   w-full ">
             
  <SwiperSlider/>
           </div>

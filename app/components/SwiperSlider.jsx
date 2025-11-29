@@ -10,9 +10,19 @@ import Image from 'next/image';
 
 const SwiperSlider = () => {
    const cardcollection = [
+
+
+    
     {
       status: "coming-soon",
       comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
+      cardimg: "/assets/images/Creative.png",
+      desctittle: "Creative Giants",
+      carddesc:
+        "Unearthed agency is a mural and sign painting agency based in Irondale, Alabama.",
+      link: "https://mammoth-murals.netlify.app/",
+    },
+    {
       cardvideo: "/assets/Videos/commingsoon.mp4",
       desctittle: "Mammoth Murals",
       carddesc:

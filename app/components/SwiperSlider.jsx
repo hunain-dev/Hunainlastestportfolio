@@ -1,27 +1,20 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-cards';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
 
-import { EffectCards } from 'swiper/modules';
-import Image from 'next/image';
-
-
-
+import { EffectCards } from "swiper/modules";
+import Image from "next/image";
 
 const SwiperSlider = () => {
-   const cardcollection = [
-
-
-    
+  const cardcollection = [
     {
-      status: "coming-soon",
-      comingMessage: "🚧 Coming Soon! This website will be live in 4 days.",
       cardimg: "/assets/images/Creative.png",
       desctittle: "Creative Giants",
       carddesc:
-        "Unearthed agency is a mural and sign painting agency based in Irondale, Alabama.",
-      link: "https://mammoth-murals.netlify.app/",
+        "Creative Giants is an Awwwards-winning website that I successfully cloned with precision and attention to detail.",
+      link: "https://klearmind-therapy-clinics.netlify.app/",
     },
+
     {
       cardvideo: "/assets/Videos/commingsoon.mp4",
       desctittle: "Mammoth Murals",
@@ -39,15 +32,13 @@ const SwiperSlider = () => {
     {
       cardimg: "/Assets/images/Camille-Bas-1200x908.png",
       desctittle: "Digital Tobacco",
-      carddesc:
-        "Transforming traditional industry into digital excellence.",
+      carddesc: "Transforming traditional industry into digital excellence.",
       link: "https://tabaccino.netlify.app/",
     },
     {
       cardimg: "/Assets/images/jobs.jpg",
       desctittle: "Career Hunt",
-      carddesc:
-        "An interactive job-based game to test accuracy and focus.",
+      carddesc: "An interactive job-based game to test accuracy and focus.",
       link: "https://careerhant.netlify.app/",
     },
 
@@ -69,98 +60,113 @@ const SwiperSlider = () => {
     {
       cardimg: "/Assets/images/tictac.png",
       desctittle: "Tic-Tac-Toe Game",
-      carddesc: "Tic Tac Toe is a simple and interactive web game designed to capture the fun and competitive spirit of the classic two-player strategy",
+      carddesc:
+        "Tic Tac Toe is a simple and interactive web game designed to capture the fun and competitive spirit of the classic two-player strategy",
       link: "https://reactxogame.netlify.app/",
     },
     {
       cardimg: "/Assets/images/spacer.png",
       desctittle: "spencergabor work",
-      carddesc: "Memory Game is an engaging and interactive web-based project designed to challenge concentration and recall skills. With smooth animations,",
+      carddesc:
+        "Memory Game is an engaging and interactive web-based project designed to challenge concentration and recall skills. With smooth animations,",
       link: "https://spancer-gabor.netlify.app/",
     },
     {
       cardimg: "/Assets/images/weather.jpg",
       desctittle: "Weather App",
-      carddesc: "Weather App is a modern and user-friendly web application designed to provide real-time weather updates for any location.",
+      carddesc:
+        "Weather App is a modern and user-friendly web application designed to provide real-time weather updates for any location.",
       link: "https://macro-weather-app.netlify.app/",
     },
     {
       cardimg: "/assets/images/Klearmindtherapy.png",
       desctittle: "Two Good Company",
-      carddesc: "Two Good Company is a fully animated and responsive website clone inspired by the award-winning brand. With smooth animations, responsive layout,",
+      carddesc:
+        "Two Good Company is a fully animated and responsive website clone inspired by the award-winning brand. With smooth animations, responsive layout,",
       link: "https://twogoodcompany.netlify.app/",
     },
     {
       cardimg: "/Assets/images/TwoGoodGoodSave.jpg",
       desctittle: "Furni – Interior Design",
-      carddesc: "Furni is a modern and minimalistic interior design website built to showcase elegant layouts and stylish aesthetics. With smooth animations,",
+      carddesc:
+        "Furni is a modern and minimalistic interior design website built to showcase elegant layouts and stylish aesthetics. With smooth animations,",
 
       link: "https://furni-interior-design.netlify.app/",
     },
     {
       cardimg: "/Assets/images/hello.jpg",
       desctittle: "We think elastic",
-      carddesc: "We Think Elastic is a modern and interactive website clone inspired by an award-winning design. With smooth animations, responsive layout,",
+      carddesc:
+        "We Think Elastic is a modern and interactive website clone inspired by an award-winning design. With smooth animations, responsive layout,",
 
       link: "https://myrejoucie.netlify.app/",
     },
     {
       cardimg: "/Assets/images/rejouices.jpeg",
       desctittle: "rejouices",
-      carddesc: "Rejouice is a fully animated and responsive website clone inspired by the award-winning agency site. With smooth animations,",
+      carddesc:
+        "Rejouice is a fully animated and responsive website clone inspired by the award-winning agency site. With smooth animations,",
 
       link: "https://wethinkelastic.netlify.app/",
     },
-  ]
+  ];
   return (
     <div>
-  <Swiper
-        effect={'cards'}
+      <Swiper
+        effect={"cards"}
         grabCursor={true}
         modules={[EffectCards]}
         className="mySwiper"
       >
-        {
-          cardcollection.map((elem,index)=>{
-            return(
-              <SwiperSlide key={index}>
-              <div className='h-[40vh] w-full rounded-xl overflow-hidden'>
-  
-                {/* ✅ ONLY FIRST SLIDE WILL SHOW VIDEO */}
-                {index === 0 && elem.cardvideo ? (
+        {cardcollection.map((elem, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <a
+                href={index === 0 ? "#" : elem.link}
+                target="_blank"
+                onClick={(e) => {
+                  if (index === 0) {
+                    e.preventDefault();
+                    alert(
+                      "Please wait... this website is still under development."
+                    );
+                  }
+                }}
+                className="h-[40vh]  w-full rounded-xl overflow-hidden block"
+              >
+                {index === 1 && elem.cardvideo ? (
                   <video
                     src={elem.cardvideo}
                     autoPlay
                     loop
                     muted
                     playsInline
-                    className='h-full w-full object-cover'
+                    className="h-full w-full object-cover"
                   />
                 ) : (
                   <Image
-                  height={500}
-                  width={500}
+                    height={500}
+                    width={500}
                     src={elem.cardimg}
-                    className='h-full w-full object-cover'
+                    className="h-full w-full object-cover"
                     alt={elem.desctittle}
-                    loading='lazy'
+                    loading="lazy"
                   />
                 )}
+              </a>
 
-  
-              </div>
-              <h1 className='actay mt-9 px-2 text-white font-500'>{elem.desctittle}</h1>
-              <p className='actay mt-1 px-2 text-[0.9vw] text-white'>{elem.carddesc}</p>
+              <h1 className="actay mt-9 px-2 text-white font-500">
+                {elem.desctittle}
+              </h1>
+              <p className="actay mt-1 px-2 text-[0.9vw] text-white">
+                {elem.carddesc}
+              </p>
             </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </div>
+  );
+};
 
-            )
-          })
-        }
-    
-      </Swiper>  
-      
-        </div>
-  )
-}
-
-export default SwiperSlider
+export default SwiperSlider;
